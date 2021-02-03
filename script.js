@@ -1,20 +1,20 @@
 const button = document.getElementById('button')
 
 function validate(email) {
-    if(email.match(/^[^@]+@[\w\.]{2,10}\.[\w]{2,5}$/i)) {
-    button.disabled = false
-    button.classList.remove('disabled')
+    if (email.match(/^[^@]+@[\w\.]{2,10}\.[\w]{2,5}$/i)) {
+        button.disabled = false
+        button.classList.remove('disabled')
     } else {
-    button.disabled = true
-    button.classList.add('disabled')
+        button.disabled = true
+        button.classList.add('disabled')
     }
 }
 
 function correct() {
     swal({
-    title: 'Congratulations!',
-    text: 'This is a correct Email',
-    icon: 'success',
-    button: 'Close'
+        title: 'Congratulations!',
+        text: 'This is a correct Email',
+        icon: 'success',
+        button: 'Close'
     })
 }
